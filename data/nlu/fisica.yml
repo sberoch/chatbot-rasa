@@ -1,0 +1,54 @@
+version: "2.0"
+nlu:
+
+- intent: indica_tema
+  examples: |
+   - [mru](subtema)
+   - [torque](subtema)
+   - [dinamica](subtema)
+   - [cuerpo rigido](subtema)
+   - [optica geometrica](subtema)
+   - [teorema de bernoulli](subtema)
+   - [leyes de newton](subtema)
+   - es [fuerzas conservativas](subtema)
+   - la [difraccion](subtema)
+   - el [principio de fermat](subtema)
+   - [lentes](subtema)
+   - [sistemas de particulas](subtema)
+
+- intent: obtener_bibliografia
+  examples: |
+    - de donde puedo leer mas sobre los temas de la clase pasada?
+    - donde hay bibliografia
+    - que bibliografia usamos en la materia
+    - que se puede leer para estos temas
+    - quiero leer un poco mas. de donde puedo sacar mas informacion?
+    - donde puedo conseguir la bibliografia
+    - donde puedo leer sobre [mru](subtema)
+    - hay algun libro sobre [optica fisica](subtema)
+    - quisiera un libro para leer acerca de [cuerpo rigido](subtema)
+    - donde puedo profundizar sobre [dinamica](subtema)
+
+- intent: duda_concepto
+  examples: |
+    - que es el [momento de inercia](subtema)
+    - no entiendo como calcular el [centro instantaneo de rotacion](subtema)
+    - como puedo calcular la [energía cinetica de un cuerpo rigido](subtema)
+    - no se como hacer para obtener la [aceleración en este punto del cuerpo rigido]{"entity": "subtema", "value": "Aceleracion en punto de cuerpo rigido"} 
+    - como calculo la [velocidad en el centro]{"entity": "subtema", "value": "Velocidad en punto de cuerpo rigido"} del cuerpo rigido
+    - como se cual es la [velocidad en un punto]{"entity": "subtema", "value": "Velocidad en punto de cuerpo rigido"} del cuerpo rigido
+    - tengo una duda de concepto de cuerpo rigido. Que es la [rigidez](subtema)
+    - no se como calcular el [momento angular](subtema)
+    - que significa [cir](subtema)
+    - que es la [dinamica](subtema)
+    - cuales son las [leyes de newton](subtema)
+    - no entiendo que son las [ondas estacionarias](subtema)
+    - estoy intentando calcular la [potencia](subtema) pero no me acuerdo que era
+    - no me quedo claro que era el [batido](subtema)
+    - tengo una pregunta. Que es el [Efecto Doppler](subtema)
+    - que son los [sistemas de coordenadas](subtema)
+    - tengo una pregunta conceptual sobre [mruv](subtema)
+    - como era la [experiencia de young](subtema)
+    - no me acuerdo como calcular la [energia potencial](subtema)
+    - no me acuerdo las [leyes de snell](subtema)
+    - no me quedo claro el concepto de [acustica](subtema)

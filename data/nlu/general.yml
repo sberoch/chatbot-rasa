@@ -1,0 +1,73 @@
+version: "2.0"
+nlu:
+
+- intent: saludo
+  examples: |
+    - hola
+    - buenas
+    - hola como va?
+    - que tal?
+    - que onda
+    - hey
+    - che
+    - buenas tardes
+    - buenas noches
+    - buen dia
+
+- intent: pregunta_sin_tema
+  examples: |
+    - tengo una pregunta
+    - tengo algunas dudas
+    - no entiendo una cosa
+    - tengo una duda conceptual
+    - tengo una duda con un enunciado
+    - no entiendo este enunciado
+    - como puedo plantear esto?
+    - estoy tratando de resolver un ejercicio
+    - quiero empezar con la proxima guia pero no entiendo
+    - estuve planteando el ejercicio de la clase pasada
+    - no me sale el ejercicio
+    - no entiendo los ejercicios
+
+- intent: adios
+  examples: |
+    - chau
+    - ok gracias
+    - me voy
+    - adios
+    - nos vemos
+    - gracias por la ayuda
+    - gracias por ayudar
+
+- intent: afirmar
+  examples: |
+    - si
+    - ok
+    - claro
+    - sin dudas
+    - exacto
+    - por supuesto
+    - sisi
+    - obvio
+    - bueno
+    - genial
+    - dale
+    - okok
+
+- intent: negar
+  examples: |
+    - no
+    - para nada
+    - nono
+    - realmente no
+    - na
+    - nop
+    - nada
+
+- intent: desafio_bot
+  examples: |
+    - sos un bot?
+    - eres un chatbot?
+    - sos un robot
+    - sos un bot seguro, puedo hablar con un humano?
+    - puedo hablar con una persona?

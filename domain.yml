@@ -1,0 +1,43 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- indica_tema
+- pregunta_sin_tema
+- saludo
+- adios
+- afirmar
+- negar
+- desafio_bot
+- duda_concepto
+- obtener_bibliografia
+entities:
+- subtema
+slots:
+  subtema:
+    type: text
+    influence_conversation: true
+responses:
+  utter_saludo:
+  - text: Hola! Como puedo ayudarte?
+  utter_adios:
+  - text: Adios!
+  utter_soy_bot:
+  - text: Soy un bot. Espero poder ayudarte de todas formas.
+  utter_respuesta_sin_tema:
+  - text: Cual es el tema de tu pregunta?
+  utter_recomendar_libros:
+  - text: Se recomienda fuertemente volver a buscar entre la bibliografia que te indico el docente. Sin embargo los libros mas recomendados son el Alonso Finn, el Sears Zemansky, y el Resnick.
+  utter_enviar_link_a_bibliografia:
+  - text: Tambien te puede servir [este cuadro](http://wiki.foros-fiuba.com.ar/_media/materias:62:bibliografia.pdf)
+  utter_preguntar_datos:
+  - text: ¿Cuáles son los datos de tu problema?
+  utter_default:
+  - text: No entendi tu mensaje. ¿Podrias intentar de nuevo con otras palabras?
+  - text: Perdon, no se entendio lo que quisiste decir. Intentalo nuevamente
+actions:
+- action_obtener_definicion
+- action_recibir_tema
+- utter_preguntar_datos
+- utter_respuesta_sin_tema

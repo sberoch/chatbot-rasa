@@ -1,0 +1,21 @@
+version: "2.0"
+stories:
+
+- story: Usuario busca bibliografia
+  steps:
+  - intent: obtener_bibliografia
+  - action: utter_recomendar_libros
+  - action: utter_enviar_link_a_bibliografia
+
+- story: Usuario tiene una duda de concepto
+  steps:
+  - intent: duda_concepto
+  - action: action_obtener_definicion
+
+- story: Usuario pregunta sin tema y proporciona un tema
+  steps:
+  - intent: pregunta_sin_tema
+  - action: utter_respuesta_sin_tema
+  - intent: indica_tema
+  - action: action_recibir_tema
+  - action: utter_preguntar_datos

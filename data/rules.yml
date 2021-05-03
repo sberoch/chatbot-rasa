@@ -1,0 +1,13 @@
+version: "2.0"
+rules:
+  
+- rule: Decir chau siempre que dicen chau
+  steps:
+  - intent: adios
+  - action: utter_adios
+
+- rule: Decir soy un bot siempre que el usuario pregunta eso
+  steps:
+  - intent: desafio_bot
+  - action: utter_soy_bot
+

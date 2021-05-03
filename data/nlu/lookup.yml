@@ -1,0 +1,86 @@
+version: "2.0"
+nlu:
+  - lookup: subtema
+    examples: |
+      -  sistemas de referencia
+      -  sistemas de coordenadas
+      -  velocidad 
+      -  aceleracion 
+      -  movimiento vectorial en el plano
+      -  composicion de velocidades
+      -  composicion de aceleraciones
+      -  componentes intrínsecas
+      -  mru
+      -  mruv
+      -  movimientos relativos 
+      -  movimiento armónico simple
+      -  dinamica
+      -  leyes de newton
+      -  cantidad de movimiento
+      -  conservacion de cantidad de movimiento
+      -  fuerza gravitatoria
+      -  fuerza elástica
+      -  fuerza de vínculo
+      -  fuerza de rozamiento 
+      -  fuerza dependiente de la posicion
+      -  pendulo simple
+      -  fuerzas viscosas
+      -  sistemas inerciales
+      -  sistemas no inerciales
+      -  sistemas de masa variable
+      -  torque
+      -  momentum angular
+      -  momento cinetico
+      -  conservacion del momento cinetico
+      -  trabajo
+      -  potencia
+      -  energia cinetica
+      -  energia potencial
+      -  energia mecanica 
+      -  fuerzas no conservativas
+      -  fuerzas conservativas
+      -  sistemas de particulas
+      -  colisiones
+      -  regimen estacionario
+      -  ecuación de continuidad
+      -  teorema de bernoulli
+      -  cuerpo rígido 
+      -  rigidez
+      -  centro instantaneo de rotacion
+      -  cir
+      -  aceleracion en punto de cuerpo rigido
+      -  velocidad en punto de cuerpo rigido
+      -  ejes principales de inercia
+      -  momento de inercia
+      -  teorema de steiner
+      -  momento angular
+      -  rotacion de cuerpo rigido
+      -  energia cinetica de cuerpo cigido 
+      -  rototraslacion
+      -  movimiento ondulatorio
+      -  onda
+      -  principio de superposicion
+      -  ondas estacionarias
+      -  batido
+      -  interferencia
+      -  método fasorial
+      -  acustica
+      -  intensidad del sonido
+      -  efecto doppler
+      -  resonancia
+      -  optica fisica
+      -  principio de huyghens
+      -  principio de fermat
+      -  experiencia de young
+      -  interferencia de dos fuentes
+      -  interferencia de varias fuentes
+      -  difraccion
+      -  optica geometrica
+      -  leyes de snell
+      -  leyes de la reflexion
+      -  espejos planos
+      -  espejos curvos
+      -  dioptras
+      -  lentes
+      -  focos
+      -  planos focales
