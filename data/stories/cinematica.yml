@@ -1,0 +1,52 @@
+version: "2.0"
+stories:
+- story: Problema de mruv de trayectoria horizontal
+  steps:
+  - intent: problema_de_mruv
+  - action: utter_preguntar_trayectoria
+  - intent: indicar_trayectoria
+    entities:
+    - cinematica_trayectoria: horizontal
+  - action: utter_como_resolver_mruv_horizontal
+  - action: utter_enviar_imagen_resolucion_mruv
+
+- story: Problema de mruv de trayectoria vertical
+  steps:
+  - intent: problema_de_mruv
+  - action: utter_preguntar_trayectoria
+  - intent: indicar_trayectoria
+    entities:
+    - cinematica_trayectoria: vertical
+  - action: utter_como_resolver_mruv_vertical
+  - action: utter_enviar_imagen_resolucion_mruv
+
+- story: Problema de mruv de trayectoria compuesta
+  steps:
+  - intent: problema_de_mruv
+  - action: utter_preguntar_trayectoria
+  - intent: indicar_trayectoria
+    entities:
+    - cinematica_trayectoria: compuesta
+  - action: utter_como_resolver_mruv_compuesta
+  - action: utter_enviar_imagen_resolucion_mruv
+
+- story: Problema de mruv de trayectoria circular
+  steps:
+  - intent: problema_de_mruv
+  - action: utter_preguntar_trayectoria
+  - intent: indicar_trayectoria
+    entities:
+    - cinematica_trayectoria: circular
+  - action: utter_como_resolver_mruv_circular
+  - action: utter_enviar_imagen_resolucion_mruv
+
+- story: Problema de mruv de trayectoria generica
+  steps:
+  - intent: problema_de_mruv
+  - action: utter_preguntar_trayectoria
+  - intent: indicar_trayectoria
+    entities:
+    - cinematica_trayectoria: generica
+  - action: utter_como_resolver_mruv_generica
+  - action: utter_enviar_imagen_resolucion_mruv
+

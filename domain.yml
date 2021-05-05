@@ -2,22 +2,29 @@ version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
 intents:
-- indica_tema
-- pregunta_sin_tema
 - saludo
 - adios
 - afirmar
 - negar
 - desafio_bot
+- indica_tema
+- pregunta_sin_tema
 - duda_concepto
 - obtener_bibliografia
+- problema_de_mruv
+- indicar_trayectoria
+
 entities:
 - subtema
+- cinematica_trayectoria
+
 slots:
   subtema:
     type: text
     influence_conversation: true
+
 responses:
   utter_saludo:
   - text: Hola! Como puedo ayudarte?
@@ -32,12 +39,35 @@ responses:
   utter_enviar_link_a_bibliografia:
   - text: Tambien te puede servir [este cuadro](http://wiki.foros-fiuba.com.ar/_media/materias:62:bibliografia.pdf)
   utter_preguntar_datos:
-  - text: ¿Cuáles son los datos de tu problema?
+  - text: ¿Cuáles son los datos del problema que tenes?
+  - text: ¿De qué datos dispones?
+  utter_preguntar_trayectoria:
+  - text: ¿Qué trayectoria sigue? ¿Horizontal, vertical, compuesta, circular, genérica?
+  utter_como_resolver_mruv_horizontal:
+  - text: '<indicar resolucion horizontal>'
+  utter_como_resolver_mruv_vertical:
+  - text: '<indicar resolucion vertical>'
+  utter_como_resolver_mruv_compuesta:
+  - text: '<indicar resolucion compuesta>'
+  utter_como_resolver_mruv_circular:
+  - text: '<indicar resolucion circular>'
+  utter_como_resolver_mruv_generica:
+  - text: '<indicar resolucion generica>'
+  utter_enviar_imagen_resolucion_mruv:
+  - text: '<imagen de como resolver mruv>'
   utter_default:
   - text: No entendi tu mensaje. ¿Podrias intentar de nuevo con otras palabras?
   - text: Perdon, no se entendio lo que quisiste decir. Intentalo nuevamente
+
 actions:
 - action_obtener_definicion
 - action_recibir_tema
 - utter_preguntar_datos
 - utter_respuesta_sin_tema
+- utter_como_resolver_mruv_horizontal
+- utter_como_resolver_mruv_vertical
+- utter_como_resolver_mruv_compuesta
+- utter_como_resolver_mruv_circular
+- utter_como_resolver_mruv_generica
+- utter_enviar_imagen_resolucion_mruv
+- utter_preguntar_trayectoria
