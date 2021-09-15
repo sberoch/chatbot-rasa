@@ -24,10 +24,20 @@ slots:
   subtema:
     type: text
     influence_conversation: true
+  cinematica_trayectoria:
+    influence_conversation: true
+    type: categorical
+    values:
+      - horizontal
+      - vertical
+      - compuesta
+      - circular
+      - generica
 
 responses:
   utter_saludo:
   - text: Hola! Como puedo ayudarte?
+    image: 'http://mestate.ch/wp-content/uploads/2017/03/wide-photos-placeholder-1024x244.jpg'
   utter_adios:
   - text: Adios!
   utter_soy_bot:
@@ -44,17 +54,17 @@ responses:
   utter_preguntar_trayectoria:
   - text: ¿Qué trayectoria sigue? ¿Horizontal, vertical, compuesta, circular, genérica?
   utter_como_resolver_mruv_horizontal:
-  - text: '<indicar resolucion horizontal>'
+  - text: indicar resolucion horizontal
   utter_como_resolver_mruv_vertical:
-  - text: '<indicar resolucion vertical>'
+  - text: indicar resolucion vertical
   utter_como_resolver_mruv_compuesta:
-  - text: '<indicar resolucion compuesta>'
+  - text: indicar resolucion compuesta
   utter_como_resolver_mruv_circular:
-  - text: '<indicar resolucion circular>'
+  - text: indicar resolucion circular
   utter_como_resolver_mruv_generica:
-  - text: '<indicar resolucion generica>'
+  - text: indicar resolucion generica
   utter_enviar_imagen_resolucion_mruv:
-  - text: '<imagen de como resolver mruv>'
+  - text: imagen de como resolver mruv
   utter_default:
   - text: No entendi tu mensaje. ¿Podrias intentar de nuevo con otras palabras?
   - text: Perdon, no se entendio lo que quisiste decir. Intentalo nuevamente
@@ -62,12 +72,3 @@ responses:
 actions:
 - action_obtener_definicion
 - action_recibir_tema
-- utter_preguntar_datos
-- utter_respuesta_sin_tema
-- utter_como_resolver_mruv_horizontal
-- utter_como_resolver_mruv_vertical
-- utter_como_resolver_mruv_compuesta
-- utter_como_resolver_mruv_circular
-- utter_como_resolver_mruv_generica
-- utter_enviar_imagen_resolucion_mruv
-- utter_preguntar_trayectoria

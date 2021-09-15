@@ -3,30 +3,36 @@ nlu:
 
 - intent: indicar_trayectoria
   examples: |
-   - la trayectoria es [horizontal](cinematica_trayectoria)
-   - tiene trayectoria [horizontal](cinematica_trayectoria)
    - [horizontal](cinematica_trayectoria)
-   - es [vertical](cinematica_trayectoria)
    - [vertical](cinematica_trayectoria)
-   - trayectoria es [vertical](cinematica_trayectoria)
    - [compuesta](cinematica_trayectoria)
-   - creo que es [compuesta](cinematica_trayectoria)
-   - la trayectoria del problema es [compuesta](cinematica_trayectoria)
-   - es una trayectoria [circular](cinematica_trayectoria)
    - [circular](cinematica_trayectoria)
-   - la trayectoria es [circular](cinematica_trayectoria)
+   - [generica](cinematica_trayectoria)
+   - es [horizontal](cinematica_trayectoria)
+   - es [vertical](cinematica_trayectoria)
    - es [generica](cinematica_trayectoria)
-   - parece [generica](cinematica_trayectoria)
-   - creo que es [generica](cinematica_trayectoria)
+   - la trayectoria es [circular](cinematica_trayectoria)
+   - la trayectoria es [generica](cinematica_trayectoria)
+   - trayectoria es [compuesta](cinematica_trayectoria)
+   - trayectoria es [vertical](cinematica_trayectoria)
+   - tiene trayectoria [horizontal](cinematica_trayectoria)
+   - tiene trayectoria [circular](cinematica_trayectoria)
+   - creo que es [circular](cinematica_trayectoria)
+   - creo que es [compuesta](cinematica_trayectoria)
+   - tiene trayectoria [vertical](cinematica_trayectoria)
+   - tiene trayectoria [generica](cinematica_trayectoria)   
 
 - intent: problema_de_mruv
   examples: |
    - Me piden calcular el tiempo que tarda un ascensor en llegar al suelo.
+   - Tengo que calcular cuanto tarda un ascensor en llegar al piso
    - Un ascensor de 3m de altura sube con una [aceleracion](subtema)
    - Tengo un ascensor que sube con [aceleracion](subtema)
    - Tengo un ascensor que sube
    - Hay un ascensor que va para arriba
    - Se lanza una pelota verticalmente hacia arriba con una velocidad desde la azotea de un edificio.
+   - Un hombre situado en la azotea de un edificio, lanza una pelota verticalmente hacia arriba con una rapidez
+   - Un hombre tira una pelota para arriba
    - Tiran una pelota para arriba desde un edificio
    - Alguien lanza una pelota hacia arriba desde una altura
    - Tiraron una bola para arriba
@@ -35,3 +41,10 @@ nlu:
    - Una flecha para ensartar una manzana sale con una velocidad inicial
    - altura máxima que alcanza la flecha medida desde el punto de lanzamiento
    - Calcular la distancia horizontal a la que deberá estar el arquero
+   - Un automovil frena
+   - Automovil acelerando
+   - Hay un automovil que frena
+   - Un automovil con una velocidad constante frena
+   - Proyectil disparado con un angulo de alfa
+   - Un proyectil es disparado con un angulo inicial
+   - Dispararon un proyectil que al principio tiene angulo
